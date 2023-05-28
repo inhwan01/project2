@@ -1,0 +1,14 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "프로젝트 개요 1. 이미지를 S3에 업로드하는 기능을 구현합니다(프로그램에서 파일을 입력 받아, 해당 파일을 S3에 업로드합니다)",
+  "main": "project.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1386.0"
+  }
+}
