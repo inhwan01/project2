@@ -2,9 +2,9 @@ var AWS = require('aws-sdk');
 const { createCanvas, loadImage, registerFont } = require('canvas');
 
 AWS.config.update({
-  accessKeyId: '',
-  secretAccessKey: '',
-  region: 'ap-northeast-2'
+    accessKeyId: 'AccessKeyId',
+    secretAccessKey: 'SecretAccesskey',
+    region: 'ap-northeast-2'
 });
 
 
