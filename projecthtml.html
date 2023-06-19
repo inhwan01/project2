@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>이미지에 네모 박스 그리기</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="my-canvas" width="500" height="400"></canvas>
+
+    <script>
+      const canvas = document.getElementById("my-canvas");
+      const ctx = canvas.getContext("2d");
+
+      // 이미지 로드 및 네모 박스 그리기
+      function drawBoundingBox(imageSrc, x, y, width, height) {
+        const image = new Image();
+        image.src = imageSrc;
+
+        image.onload = function() {
+          ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+          ctx.strokeStyle = "red";
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+          ctx.rect(x, y, width, height);
+          ctx.stroke();
+        };
+      }
+
+      // 이미지 경로와 네모 박스 정보
+      const imageSrc = "사진2.jpg";
+      const boxX = 100;
+      const boxY = 100;
+      const boxWidth = 200;
+      const boxHeight = 150;
+
+      // 이미지에 네모 박스 그리기
+      drawBoundingBox(imageSrc, boxX, boxY, boxWidth, boxHeight);
+    </script>
+  </body>
+</html>

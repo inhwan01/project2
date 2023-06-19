@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.1386.0"
+    "@aws-sdk/client-rekognition": "^3.345.0",
+    "aws-sdk": "^2.1390.0",
+    "canvas": "^2.11.2"
   }
 }
